@@ -7,26 +7,117 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="grid grid-cols-6">
-<nav class="bg-black text-white col-span-1">
-    <div><!--nav head-->
-        <div></div><!--For nav SVG-->
-        <h1>X wallet</h1>
+    <div class="grid grid-cols-6 relative  h-screen justify-evenly">
+<nav class="bg-black text-white col-span-2 absolute sm:relative  w-full md:pt-10 pt-2 pb-2 flex flex-col pl-2  sm:block sm:max-md:w-60 md:col-span-2 lg:col-span-1">
+    <div class="flex items-center justify-between gap-x-2 pl-5 postion:fixed  pr-2"><!--nav head-->
+       <div class="flex gap-x-2 items-center ">
+        <div class="bg-green rounded-full p-1 flex items-align">
+            <img src="/src/img/X.png" alt="" srcset="" class="w-8">
+        </div><!--For nav SVG-->
+        <h1 class="text-2xl font-semibold shadow-sm">X Wallet</h1>
+       </div>
+      <div class="" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+      </div>
     </div>
-    <ul>
-        <li>Dashboard</li>
-        <li>Wallet</li>
-        <li>Trade</li>
-        <li>Exchange</li>
-        <li>Notifications</li>
-        <li>Marketplace</li>
-        <li></li>
-        <li>News</li>
-        <li>Settings</li>
-        <li>Log Out</li>
+    <ul class="flex flex-col gap-y-3 mt-10 text-gray-300 hidden  ml-2 text-md font-semibold pr-5" id="menu">
+        <a href="#" class="nav flex justify-between group">
+           <div class="flex gap-x-2">
+            <img src="./src/img/Dash.png " class="w-6" alt="" srcset="">
+            <p>Dashboard</p>
+           </div>
+           <div class="arrow">
+            
+           </div>
+        </a>
+        <a href="#" class="nav flex justify-between group">
+            <div class="flex gap-x-2">
+             <img src="./src/img/wallet.png " class="w-6" alt="" srcset="">
+             <p>Wallet</p>
+            </div>
+            <div class="arrow">
+             
+            </div>
+         </a>
+         <a href="#" class="nav flex justify-between group">
+            <div class="flex gap-x-2">
+             <img src="./src/img/Trade.png " class="w-6" alt="" srcset="">
+             <p>Trade</p>
+            </div>
+            <div class="arrow">
+             
+            </div>
+         </a>
+        
+         <a href="#" class="nav flex justify-between group">
+            <div class="flex gap-x-2">
+             <img src="./src/img/Exchange.png " class="w-6" alt="" srcset="">
+             <p>Exchange</p>
+            </div>
+            <div class="arrow">
+             
+            </div>
+         </a>
+        
+        <li class="nav flex  justify-between ">
+            <div class="flex gap-x-2">
+                <img src="./src/img/Not.png " class="w-6" alt="" srcset="">
+                <p>Notifications</p>
+            </div>
+            <div class="not"><p>4</p></div>
+        </li>
+        <a href="#" class="nav flex justify-between group">
+            <div class="flex gap-x-2">
+             <img src="./src/img/Mart.png " class="w-6" alt="" srcset="">
+             <p>Marketplace</p>
+            </div>
+            <div class="arrow">
+             
+            </div>
+         </a>
+
+        <li class=" p-3 rounded-3xl  w-50 gap-x-2 items-center  cursor-pointer
+         bg-green flex flex-col items-center self-center">
+            <div class="">
+                <img src="/src/img/spiral.png" alt="" srcset="" class="w-50">
+            </div>
+            <div class="flex flex-col justify-center items-center mt-5 text-black">
+                <h1 class="font-semibold text-lg">This new Update</h1>
+                <p class="font-thin text-xs">Version 3.2.0 </p>
+            </div>
+            <div class="bg-black text-white  p-3 w-40 rounded-full flex justify-evenly mt-2 shadow-md transform transition hover:text-green group hover:scale-110 ease-in duration-300">
+                <a href="">Let's Go</a>
+                <img src="" alt="" srcset="" class="w-8 bg-[url('/src/img/gr.png')] bg-cover
+                group-hover:bg-[url('/src/img/arrow.png')]">
+            </div>
+        </li>
+        <li class="nav flex  justify-between">
+            <div class="flex gap-x-2">
+                <img src="./src/img/News.png" class="w-6" alt="" srcset="">
+                <p>News</p>
+            </div>
+            <div class="not"><p>3</p></div>
+        </li>
+       
+        <a href="#" class="nav flex justify-between group">
+            <div class="flex gap-x-2">
+             <img src="./src/img/Set.png " class="w-6" alt="" srcset="">
+             <p>Settings</p>
+            </div>
+            <div class="arrow">
+             
+            </div>
+         </a>
+        <a href="/" class="nav">
+            <img src="./src/img/Log.png " class="w-5" alt="" srcset="">
+            <p>Log Out</p>
+        </a href="/">
+        
     </ul>
 </nav>
-<main class="col-span-3 "> 
+<main class="col-span-6 w-full border sm:col-span-4 sm:w-full  p-5 "> 
     <div><!--ETH heading and The price-->
         <div>
             <div></div> <!--Eth svg-->
@@ -115,7 +206,7 @@
         </div>
     </div>
 </main>
-    <aside class="col-span-2 bg-gray-200">
+    <aside class="col-span-2 bg-gray-200  hidden lg:col-span-1">
         <div><!--settings-->
             <div></div>
             <div></div>
@@ -156,5 +247,6 @@
 
     </aside>
     </div><!--Content Wrapper-->
+    <script src="./src/index.js"></script>
 </body>
 </html>

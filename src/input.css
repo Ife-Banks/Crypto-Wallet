@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme{
+    --color-green:#97d017;
+}
+.nav{
+    @apply p-3 rounded-full flex w-50 gap-x-2 items-center hover:bg-gray-500 hover:shadow-md  cursor-pointer transition transform ease-out duration-300 hover:scale-110;
+}
+
+.not{
+    @apply flex rounded-full w-5 h-5 items-center justify-center shadow-md bg-blue-700 p-1 text-xs;
+}
+
+.arrow{
+    @apply  bg-contain group-hover:bg-[url('/src/img/arrow.png')] group-active:bg-[url('/src/img/arrow.png')]  group-focus:bg-[url('/src/img/arrow.png')] w-7  h-7 bg-no-repeat bg-center;
+}
