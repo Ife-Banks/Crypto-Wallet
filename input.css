@@ -15,3 +15,7 @@
 .arrow{
     @apply  bg-contain group-hover:bg-[url('/src/img/arrow.png')] group-active:bg-[url('/src/img/arrow.png')]  group-focus:bg-[url('/src/img/arrow.png')] w-7  h-7 bg-no-repeat bg-center;
 }
+
+.hover{
+    @apply hover:border hover:border-green cursor-pointer;
+}
