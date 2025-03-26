@@ -16,13 +16,13 @@
         </div><!--For nav SVG-->
         <h1 class="text-2xl font-semibold shadow-sm">X Wallet</h1>
        </div>
-      <div class="md:hidden" id="burger">
+      <div class="sm:hidden" id="burger">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
       </div>
     </div>
-    <ul class="flex flex-col gap-y-3 mt-10 text-gray-300 hidden  ml-2 text-md font-semibold pr-5 md:block" id="menu">
+    <ul class="flex flex-col gap-y-3 mt-10 text-gray-300 hidden  ml-2 text-md font-semibold pr-5 sm:block" id="menu">
         <a href="#" class="nav flex justify-between group">
            <div class="flex gap-x-2">
             <img src="./src/img/Dash.png " class="w-6" alt="" srcset="">
@@ -117,45 +117,92 @@
         
     </ul>
 </nav>
-<main class="col-span-6 w-full border sm:col-span-4 sm:w-full  p-5 "> 
-    <div><!--ETH heading and The price-->
-        <div>
-            <div></div> <!--Eth svg-->
-            <div>
-                <h1>ETH</h1>
-                <p>Ethereum <span>-0.235363763+</span></p>
+<main class=" col-span-6 w-full border sm:col-span-4 sm:w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-1"> 
+    <div class=" flex justify-between sm:w-100 p-2"><!--ETH heading and The price-->
+        <div class=" flex items-center gap-x-2">
+            <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                <g fill="white" fill-rule="evenodd">
+                    <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                    <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                    <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                    <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                    <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                    <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                </g>
+            </svg> <!--Eth svg-->
+            <div class="" >
+                <h1 class="font-semibold text-lg">ETH</h1>
+                <p class="text-xs font-light text-gray-600">Ethereum <span class="text-green-600">-0.235363763+</span></p>
             </div>
         </div>
-        <div>
-            <h1>2.06354</h1>
-            <p>$5 335.88</p>
+        <div class="flex flex-col justify-end">
+            <h1 class="font-bold text-2xl">2.06354</h1>
+            <p class="place-self-end text-gray-400 text-xs">$5 335.88</p>
         </div>
     </div>
-    <div><!--Send and receive-->
-        <div>
-            <div>
-                <a href="">Send</a>
-                <a href="">Receive</a>
-            </div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <div><!--Choose network-->
-        <div>
-            <h1>Choose network</h1>
-            <div>
-                <div> 
-                    <div>
-                        <h1>ERC20</h1>
-                        <p>Etherium</p>
+    <div class="flex justify-between items-center"><!--Send and receive-->
+        <div >
+            <div class="p-2 flex gap-x-2 items-center justify-center">
+                <div class="shadow-sm p-2 rounded-full w-20 flex justify-center items-center gap-x-2 bg-green font-semibold">
+                    <a href="">Send</a>
+                    <div class="bg-[url('/src/img/da.png')] w-5 h-5 bg-cover bg-center">
+
                     </div>
-                    <input type="checkbox" name=" " id="">
                 </div>
+                <div class="p-2 rounded-full w-25 flex justify-center shadow-sm font-medium items-center inset-shadow-sm" >
+                    <a href="">Receive</a>
+                    <div class="bg-[url('/src/img/dar.png')] w-6 h-5 bg-contain bg-no-repeat bg-center">
+
+                    </div>
+                </div>
+                
             </div>
         </div>
+        <div class="flex gap-x-2 items-center">
+            <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
+                <img src="./src/img/chart.png" alt="" srcset="" class="w-7 h-7">
+            </div>
+            <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
+                <img src="./src/img/info.png" alt="" srcset="" class="w-7 h-7">
+            </div>
+        </div>
+    </div>
+    <div class=" flex"><!--Choose network-->
+        <div class=" ">
+            <h1 class="font-semibold ">Choose network</h1>
+           <div class="flex gap-x-2 w-full mt-2 justify-evenly ">
+            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly"> 
+                <div class="">
+                    <h1 class="font-semibold">ERC20</h1>
+                    <p class="font-semilight text-xs text-gray-500">Etherium</p>
+                </div>
+                <input type="checkbox" name=" " id="">
+            </div>
+            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly"> 
+                <div class="">
+                    <h1 class="font-semibold">ARETH</h1>
+                    <p class="font-semilight text-xs text-gray-500">Arbitrum</p>
+                </div>
+                <input type="checkbox" name=" " id="">
+            </div>
+            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly"> 
+                <div class="">
+                    <h1 class="font-semibold">ZKSYNC</h1>
+                    <p class="font-semilight text-xs text-gray-500">ZKsyncErs</p>
+                </div>
+                <input type="checkbox" name=" " id="">
+            </div>
+            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly"> 
+                <div class="">
+                    <h1 class="font-semibold">OPTIMISM</h1>
+                    <p class="font-semilight text-xs text-gray-500">Optimism</p>
+                </div>
+                <input type="checkbox" name=" " id="" class="">
+            </div>
+           
+           </div>
+        </div>
+        
     </div>
     <div><!--Amount wrapper-->
         <div>
