@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>Document</title>
 </head>
-<body class="m-0 p-0">
-    <div class="grid grid-cols-5 relative  h-screen justify-evenly border w-100vw">
-<nav class=" text-white col-span-full sm:relative  w-100 md:pt-10  flex flex-col  sm:block md:max-xl:col-span-2  xl:col-span-1 mix-blend-normal z-999 fixed mt-0 h-screen bg-blend-multiply">
-    <div class="bg-black flex items-center justify-between gap-x-2 pl-5 postion:fixed  pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md"><!--nav head-->
+<body class="m-0">
+    <div class="grid grid-cols-5 relative  h-screen justify-evenly  w-100vw">
+<nav class=" text-white col-span-full   w-100 sm:w-full   flex flex-col  sm:block sm:max-lg:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 h-screen bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 ">
+    <div class="bg-black flex items-center justify-between gap-x-2 pl-5   pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md md:pt-10 sm:rounded-none"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
         <div class="bg-green rounded-full p-1 flex items-align">
             <img src="/src/img/X.png" alt="" srcset="" class="w-8">
@@ -22,7 +22,7 @@
           </svg>
       </div>
     </div>
-    <ul class="backdrop-blur-sm bg-black/50 flex flex-col gap-y-3 pt-10 text-gray-300 relative z-999 pl-2 text-md font-semibold pr-5 sm:block overflow-y-scroll scrollbar scrollbar-thumb-black scrollbar-track-black scrollbar-thumb-rounded scrollbar-track-rounded absolute -top-1   overscroll-none" id="menu">
+    <ul class="backdrop-blur-sm bg-black/50 flex flex-col gap-y-3 pt-10 text-gray-300 relative z-999 pl-2 text-md font-semibold pr-5 sm:block overflow-y-scroll scrollbar scrollbar-thumb-black scrollbar-track-black scrollbar-thumb-rounded scrollbar-track-rounded absolute -top-1   overscroll-none sm:overflow-y-hidden hidden sm:bg-black" id="menu">
         <a href="#" class="nav flex justify-between group">
            <div class="flex gap-x-2">
             <img src="./src/img/Dash.png " class="w-6" alt="" srcset="">
@@ -78,8 +78,7 @@
             </div>
          </a>
 
-        <li class=" p-3 rounded-3xl  w-70 gap-x-2 items-center  cursor-pointer
-         bg-green/50 flex flex-col items-center place-self-center mt-3 mb-3 backdrop-blur-xl">
+        <li class=" p-3 rounded-3xl  w-70 gap-x-2 items-center  cursor-pointer bg-green/50 flex flex-col items-center place-self-center mt-3 mb-3 backdrop-blur-xl sm:bg-green sm:backdrop-filter-none sm:max-md:w-50">
             <div class="">
                 <img src="/src/img/spiral.png" alt="" srcset="" class="w-50">
             </div>
@@ -117,7 +116,7 @@
         
     </ul>
 </nav>
-<div class="col-span-5 grid grid-cols-5 relative sm:max-lg:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0">
+<div class="col-span-5 grid grid-cols-5 relative sm:max-lg:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 ">
     <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm  " id="dd" > 
         <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
             <div class=" flex items-center gap-x-2 ">
@@ -150,7 +149,7 @@
     
                         </div>
                     </div>
-                    <div class="p-2 rounded-full w-25 flex justify-center shadow-sm font-medium items-center inset-shadow-sm hover" >
+                    <div class="p-2 rounded-full w-25 flex justify-center shadow-sm font-medium items-center inset-shadow-sm  hover" >
                         <a href="">Receive</a>
                         <div class="bg-[url('/src/img/dar.png')] w-6 h-5 bg-contain bg-no-repeat bg-center">
     
@@ -186,7 +185,7 @@
                     </div>
                     <input type="checkbox" name=" " id="">
                 </div>
-                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 px-2 justify-between hover"> 
+                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 px-2 justify-between hover "> 
                     <div class="">
                         <h1 class="font-semibold md:max-lg:text-sm">ZKSYNC</h1>
                         <p class="font-semilight text-xs text-gray-500">ZKsyncErs</p>
