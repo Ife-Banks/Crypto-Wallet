@@ -7,7 +7,7 @@
     <title>X Wallet</title>
 </head>
 <body class="m-0 h-auto">
-    <div class="grid grid-cols-5 relative  h-screen justify-evenly  w-100vw h-screen ">
+    <div class="grid grid-cols-5 relative  h-auto justify-evenly  w-100vw  ">
 <nav class=" text-white col-span-full   w-70 sm:w-full   flex flex-col  sm:block sm:max-lg:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 h-screen bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 ">
     <div class="bg-black flex items-center justify-between gap-x-2 pl-5   pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md md:pt-10 sm:rounded-none"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
@@ -230,32 +230,36 @@
                 <p class="font-semibold">Add fee to amount</p>
             </div>
         </div>
-        <div >
-            <div class=" flex flex-col gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl py-3 px-5 inset-shadow-sm"><!--Adress wrapper-->
-            <div>
-                <a href="">Adress</a>
+        <div class=" flex flex-col gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl py-3 px-5 inset-shadow-sm" >
+            <div class=" flex flex-col gap-y-3" ><!--Adress wrapper-->
+            <div class="flex gap-x-4 ">
+                <a href="">Address</a>
                 <a href="">Link</a>
             </div>
-            <div>
-                <input type="text" name="" id="">
+            <div class="border border-gray-300 h-12  rounded-full flex items-center px-2 py-2">
+                <input type="text" name="" id="" placeholder="Recipient Address" class="focus:outline-none focus:ring-0 focus:border-transparent px-2  focus:border-blue-300">
                 <div></div>
             </div>
-            <div>
-                <p>Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="">Support</a></p>
+            <div class="text-xs flex px-3 py-5 rounded-2xl bg-violet-400/10 mb-5">
+                <p class="font-thin">Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="" class="text-blue-800 underline">Support</a></p>
             </div>
         </div>
-        <div><!--Receive-->
-            <div>
+        </div>
+        <div class=" flex flex-col gap-y-3 border-gray-300 w-full  rounded-2xl py-12 px-5 "><!--Receive-->
+            <div class="font-semibold text-lg">
                 <h1>Receive Amount</h1>
-                <div>
-                    <h2>0.0982495</h2>
-                    <p>ETH</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <div class=" flex">
+                    <h1 class="font-semibold text-4xl tracking-wide">0.098502</h1>
+                    <p class="place-self-end font-normal text-gray-400">ETH</p>
+                </div>
+                <div class="bg-green text-black  p-3 w-30 rounded-full flex justify-evenly mt-2 shadow-md transform transition  group hover:scale-105 ease-in duration-300 items-center group ">
+                    <a href="" class="group-hover:scale-110">Send</a>
+                    <img src="./src/img/da.png " alt="" srcset="" class="w-5 h-5 group-hover:scale-110">
+                </div>
                 </div>
             </div>
-            <div>
-                <a href="">Send</a>
-            </div>
-        </div>
     </main>
         <aside class="col-span-2 bg-gray-200  xl:col-span-2 xl:block hidden shadow-sm ">
             <div><!--settings-->
