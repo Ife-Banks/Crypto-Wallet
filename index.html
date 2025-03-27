@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/output.css">
-    <title>Document</title>
+    <title>X Wallet</title>
 </head>
 <body class="m-0 h-auto">
     <div class="grid grid-cols-5 relative  h-screen justify-evenly  w-100vw h-screen ">
@@ -204,30 +204,34 @@
             </div>
             
         </div>
-        <div><!--Amount wrapper-->
-            <div>
-                <h1>Amount</h1>
-                <div><p>MAX</p></div>
+        <div class=" flex flex-col gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl py-3 px-5 inset-shadow-sm"><!--Amount wrapper-->
+            <div class="flex justify-between w-auto items-center ">
+                <h1 class="font-semibold text-lg">Amount</h1>
+                <div class=" flex justify-center bg-green px-3 py-1 rounded-2xl text-xs font-semibold items-center shadow-sm"><p>MAX</p></div>
             </div>
-            <div>
-                <div>
-                    <div>
-                    <h1>0.098502</h1>
-                    <p>ETH</p>
+            <div class="flex justify-between">
+                <div class=" w-full gap-y-1 flex flex-col">
+                 <div class="flex justify-between items-center">
+                    <div class=" flex">
+                        <h1 class="font-semibold text-4xl tracking-wide">0.098502</h1>
+                        <p class="place-self-end font-normal text-gray-400">ETH</p>
+                    </div>
+                    <div class="bg-blue-700  p-2 w-10 h-10 flex items-center rounded-xl shadow-sm">
+                        <img src="./src/img/ex.png" alt="" class="w-6 h-6">
+                    </div>
+                 </div>
+                <div class="font-semibold flex justify-start text-sm">
+                    <p class="">-$ 239.39</p>
                 </div>
-                <div>
-                    <p>-$ 239.39</p>
-                </div>
             </div>
-            <div></div>
-    
             </div>
-            <div>
-                <p>Fee:0.000000488 ETH</p>
-                <p>Add fee to amount</p>
+            <div class="flex justify-between text-sm border-t-2 border-gray-200  py-5 ">
+                <p class="text-gray-400 ">Fee:0.000000488 ETH</p>
+                <p class="font-semibold">Add fee to amount</p>
             </div>
         </div>
-        <div><!--Adress wrapper-->
+        <div >
+            <div class=" flex flex-col gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl py-3 px-5 inset-shadow-sm"><!--Adress wrapper-->
             <div>
                 <a href="">Adress</a>
                 <a href="">Link</a>
