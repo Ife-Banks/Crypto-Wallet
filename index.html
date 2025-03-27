@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="grid grid-cols-5 relative  h-screen justify-evenly ">
-<nav class="bg-black text-white col-span-2 absolute sm:relative  w-full md:pt-10 pt-2 pb-2 flex flex-col pl-2  sm:block  md:max-xl:col-span-2  shadow-sm xl:col-span-1">
-    <div class="flex items-center justify-between gap-x-2 pl-5 postion:fixed  pr-2"><!--nav head-->
+<body class="m-0 p-0">
+    <div class="grid grid-cols-5 relative  h-screen justify-evenly border w-100vw">
+<nav class=" text-white col-span-full sm:relative  w-100 md:pt-10  flex flex-col  sm:block md:max-xl:col-span-2  xl:col-span-1 mix-blend-normal z-999 fixed mt-0 h-screen bg-blend-multiply">
+    <div class="bg-black flex items-center justify-between gap-x-2 pl-5 postion:fixed  pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
         <div class="bg-green rounded-full p-1 flex items-align">
             <img src="/src/img/X.png" alt="" srcset="" class="w-8">
         </div><!--For nav SVG-->
         <h1 class="text-2xl font-semibold shadow-sm">X Wallet</h1>
        </div>
-      <div class="sm:hidden" id="burger">
+      <div class="sm:hidden hover:cursor-pointer" id="burger">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" >
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
       </div>
     </div>
-    <ul class="flex flex-col gap-y-3 mt-10 text-gray-300 hidden  ml-2 text-md font-semibold pr-5 sm:block" id="menu">
+    <ul class="backdrop-blur-sm bg-black/50 flex flex-col gap-y-3 pt-10 text-gray-300 relative z-999 pl-2 text-md font-semibold pr-5 sm:block overflow-y-scroll scrollbar scrollbar-thumb-black scrollbar-track-black scrollbar-thumb-rounded scrollbar-track-rounded absolute -top-1   overscroll-none" id="menu">
         <a href="#" class="nav flex justify-between group">
            <div class="flex gap-x-2">
             <img src="./src/img/Dash.png " class="w-6" alt="" srcset="">
@@ -78,8 +78,8 @@
             </div>
          </a>
 
-        <li class=" p-3 rounded-3xl  w-50 gap-x-2 items-center  cursor-pointer
-         bg-green flex flex-col items-center place-self-center mt-3 mb-3 ">
+        <li class=" p-3 rounded-3xl  w-70 gap-x-2 items-center  cursor-pointer
+         bg-green/50 flex flex-col items-center place-self-center mt-3 mb-3 backdrop-blur-xl">
             <div class="">
                 <img src="/src/img/spiral.png" alt="" srcset="" class="w-50">
             </div>
@@ -118,7 +118,7 @@
     </ul>
 </nav>
 <div class="col-span-5 grid grid-cols-5 relative sm:max-lg:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0">
-    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm  "> 
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm  " id="dd" > 
         <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
             <div class=" flex items-center gap-x-2 ">
                 <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
