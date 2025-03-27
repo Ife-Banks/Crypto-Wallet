@@ -2175,6 +2175,11 @@
       display: none;
     }
   }
+  .sm\:w-50 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
