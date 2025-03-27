@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="grid grid-cols-6 relative  h-screen justify-evenly">
-<nav class="bg-black text-white col-span-2 absolute sm:relative  w-full md:pt-10 pt-2 pb-2 flex flex-col pl-2  sm:block sm:max-md:w-60 md:col-span-2 lg:col-span-2 ">
+    <div class="grid grid-cols-5 relative  h-screen justify-evenly ">
+<nav class="bg-black text-white col-span-2 absolute sm:relative  w-full md:pt-10 pt-2 pb-2 flex flex-col pl-2  sm:block  md:max-xl:col-span-2  shadow-sm xl:col-span-1">
     <div class="flex items-center justify-between gap-x-2 pl-5 postion:fixed  pr-2"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
         <div class="bg-green rounded-full p-1 flex items-align">
@@ -79,7 +79,7 @@
          </a>
 
         <li class=" p-3 rounded-3xl  w-50 gap-x-2 items-center  cursor-pointer
-         bg-green flex flex-col items-center self-center mt-3 mb-3">
+         bg-green flex flex-col items-center place-self-center mt-3 mb-3 ">
             <div class="">
                 <img src="/src/img/spiral.png" alt="" srcset="" class="w-50">
             </div>
@@ -117,182 +117,184 @@
         
     </ul>
 </nav>
-<main class=" col-span-6 w-full border sm:col-span-4 sm:w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-1"> 
-    <div class=" flex justify-between sm:w-100 p-2"><!--ETH heading and The price-->
-        <div class=" flex items-center gap-x-2">
-            <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                <g fill="white" fill-rule="evenodd">
-                    <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                    <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                    <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                    <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                    <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                    <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                </g>
-            </svg> <!--Eth svg-->
-            <div class="" >
-                <h1 class="font-semibold text-lg">ETH</h1>
-                <p class="text-xs font-light text-gray-600">Ethereum <span class="text-green-600">-0.235363763+</span></p>
+<div class="col-span-5 grid grid-cols-5 relative sm:max-lg:col-span-3 p-1 sm:w-full xl:col-span-4 xl:w-full">
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full"> 
+        <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
+            <div class=" flex items-center gap-x-2 ">
+                <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                    <g fill="white" fill-rule="evenodd">
+                        <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                        <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                        <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                        <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                        <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                        <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                    </g>
+                </svg> <!--Eth svg-->
+                <div class="" >
+                    <h1 class="font-semibold text-lg">ETH</h1>
+                    <p class="text-xs font-light text-gray-600">Ethereum <span class="text-green-600">-0.235363763+</span></p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-end">
+                <h1 class="font-bold text-2xl">2.06354</h1>
+                <p class="place-self-end text-gray-400 text-xs">$5 335.88</p>
             </div>
         </div>
-        <div class="flex flex-col justify-end">
-            <h1 class="font-bold text-2xl">2.06354</h1>
-            <p class="place-self-end text-gray-400 text-xs">$5 335.88</p>
-        </div>
-    </div>
-    <div class="flex justify-between items-center"><!--Send and receive-->
-        <div >
-            <div class="p-2 flex gap-x-2 items-center justify-center">
-                <div class="shadow-sm p-2 rounded-full w-20 flex justify-center items-center gap-x-2 bg-green font-semibold">
-                    <a href="">Send</a>
-                    <div class="bg-[url('/src/img/da.png')] w-5 h-5 bg-cover bg-center">
-
+        <div class="flex justify-between items-center"><!--Send and receive-->
+            <div >
+                <div class="p-2 flex gap-x-2 items-center justify-center">
+                    <div class="shadow-sm p-2 rounded-full w-20 flex justify-center items-center gap-x-2 bg-green font-semibold">
+                        <a href="">Send</a>
+                        <div class="bg-[url('/src/img/da.png')] w-5 h-5 bg-cover bg-center">
+    
+                        </div>
                     </div>
-                </div>
-                <div class="p-2 rounded-full w-25 flex justify-center shadow-sm font-medium items-center inset-shadow-sm hover" >
-                    <a href="">Receive</a>
-                    <div class="bg-[url('/src/img/dar.png')] w-6 h-5 bg-contain bg-no-repeat bg-center">
-
+                    <div class="p-2 rounded-full w-25 flex justify-center shadow-sm font-medium items-center inset-shadow-sm hover" >
+                        <a href="">Receive</a>
+                        <div class="bg-[url('/src/img/dar.png')] w-6 h-5 bg-contain bg-no-repeat bg-center">
+    
+                        </div>
                     </div>
+                    
                 </div>
-                
+            </div>
+            <div class="flex gap-x-2 items-center">
+                <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
+                    <img src="./src/img/chart.png" alt="" srcset="" class="w-7 h-7">
+                </div>
+                <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
+                    <img src="./src/img/info.png" alt="" srcset="" class="w-7 h-7">
+                </div>
             </div>
         </div>
-        <div class="flex gap-x-2 items-center">
-            <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
-                <img src="./src/img/chart.png" alt="" srcset="" class="w-7 h-7">
+        <div class=" flex  w-full"><!--Choose network-->
+            <div class=" w-full ">
+                <h1 class="font-semibold ">Choose network</h1>
+               <div class="grid grid-cols-4 gap-x-2 w-full mt-2 justify-evenly  sm:max-md:grid-cols-2 sm:gap-y-2">
+                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 justify-between hover "> 
+                    <div class="">
+                        <h1 class="font-semibold md:max-lg:text-sm">ERC20</h1>
+                        <p class="font-semilight text-xs text-gray-500">Etherium</p>
+                    </div>
+                    <input type="checkbox" name=" " id="">
+                </div>
+                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 justify-between hover "> 
+                    <div class="">
+                        <h1 class="font-semibold md:max-lg:text-sm">ARETH</h1>
+                        <p class="font-semilight text-xs text-gray-500">Arbitrum</p>
+                    </div>
+                    <input type="checkbox" name=" " id="">
+                </div>
+                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 px-2 justify-between hover"> 
+                    <div class="">
+                        <h1 class="font-semibold md:max-lg:text-sm">ZKSYNC</h1>
+                        <p class="font-semilight text-xs text-gray-500">ZKsyncErs</p>
+                    </div>
+                    <input type="checkbox" name=" " id="">
+                </div>
+                <div class=" flex rounded-xl shadow-sm inset-shadow-sm p-1 justify-between  hover gap-x-1"> 
+                    <div class="">
+                        <h1 class="font-semibold   md:max-lg:text-sm">OPTIMISM</h1>
+                        <p class="font-semilight text-xs text-gray-500 ">Optimism</p>
+                    </div>
+                    <input type="checkbox" name=" " id="" class="">
+                </div>
+               
+               </div>
             </div>
-            <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
-                <img src="./src/img/info.png" alt="" srcset="" class="w-7 h-7">
-            </div>
+            
         </div>
-    </div>
-    <div class=" flex  w-full"><!--Choose network-->
-        <div class=" w-full">
-            <h1 class="font-semibold ">Choose network</h1>
-           <div class="flex gap-x-2 w-full mt-2 justify-evenly ">
-            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly hover"> 
-                <div class="">
-                    <h1 class="font-semibold">ERC20</h1>
-                    <p class="font-semilight text-xs text-gray-500">Etherium</p>
-                </div>
-                <input type="checkbox" name=" " id="">
+        <div><!--Amount wrapper-->
+            <div>
+                <h1>Amount</h1>
+                <div><p>MAX</p></div>
             </div>
-            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly hover"> 
-                <div class="">
-                    <h1 class="font-semibold">ARETH</h1>
-                    <p class="font-semilight text-xs text-gray-500">Arbitrum</p>
-                </div>
-                <input type="checkbox" name=" " id="">
-            </div>
-            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly hover"> 
-                <div class="">
-                    <h1 class="font-semibold">ZKSYNC</h1>
-                    <p class="font-semilight text-xs text-gray-500">ZKsyncErs</p>
-                </div>
-                <input type="checkbox" name=" " id="">
-            </div>
-            <div class=" flex rounded-xl shadow-sm inset-shadow-sm w-30 p-1 justify-evenly  hover"> 
-                <div class="">
-                    <h1 class="font-semibold">OPTIMISM</h1>
-                    <p class="font-semilight text-xs text-gray-500">Optimism</p>
-                </div>
-                <input type="checkbox" name=" " id="" class="">
-            </div>
-           
-           </div>
-        </div>
-        
-    </div>
-    <div><!--Amount wrapper-->
-        <div>
-            <h1>Amount</h1>
-            <div><p>MAX</p></div>
-        </div>
-        <div>
             <div>
                 <div>
-                <h1>0.098502</h1>
-                <p>ETH</p>
-            </div>
-            <div>
-                <p>-$ 239.39</p>
-            </div>
-        </div>
-        <div></div>
-
-        </div>
-        <div>
-            <p>Fee:0.000000488 ETH</p>
-            <p>Add fee to amount</p>
-        </div>
-    </div>
-    <div><!--Adress wrapper-->
-        <div>
-            <a href="">Adress</a>
-            <a href="">Link</a>
-        </div>
-        <div>
-            <input type="text" name="" id="">
-            <div></div>
-        </div>
-        <div>
-            <p>Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="">Support</a></p>
-        </div>
-    </div>
-    <div><!--Receive-->
-        <div>
-            <h1>Receive Amount</h1>
-            <div>
-                <h2>0.0982495</h2>
-                <p>ETH</p>
-            </div>
-        </div>
-        <div>
-            <a href="">Send</a>
-        </div>
-    </div>
-</main>
-    <aside class="col-span-2 bg-gray-200  hidden lg:col-span-1">
-        <div><!--settings-->
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <h3>Total balance</h3>
-            <h1>$19,280.01</h1>
-            <span>
-                <div>$20,80</div>
-                <div>-1,05%</div>
-            </span>
-        </div>
-        <div> 
-            <div>
-                <a href="">TOken</a>
-                <a href="">NFTs</a>
-            </div>
-            <div>
-                <input type="checkbox" name="" id="">
-                <p>Hide Small balance</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <div></div>
                     <div>
-                        <h1>ETH</h1>
-                        <div>48023986</div>
-                    </div>
+                    <h1>0.098502</h1>
+                    <p>ETH</p>
                 </div>
                 <div>
-                    <h1>0.6395</h1>
-                    <p>$2,580.20</p>
+                    <p>-$ 239.39</p>
                 </div>
             </div>
+            <div></div>
+    
+            </div>
+            <div>
+                <p>Fee:0.000000488 ETH</p>
+                <p>Add fee to amount</p>
+            </div>
         </div>
-
-    </aside>
+        <div><!--Adress wrapper-->
+            <div>
+                <a href="">Adress</a>
+                <a href="">Link</a>
+            </div>
+            <div>
+                <input type="text" name="" id="">
+                <div></div>
+            </div>
+            <div>
+                <p>Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="">Support</a></p>
+            </div>
+        </div>
+        <div><!--Receive-->
+            <div>
+                <h1>Receive Amount</h1>
+                <div>
+                    <h2>0.0982495</h2>
+                    <p>ETH</p>
+                </div>
+            </div>
+            <div>
+                <a href="">Send</a>
+            </div>
+        </div>
+    </main>
+        <aside class="col-span-2 bg-gray-200  xl:col-span-2 xl:block hidden">
+            <div><!--settings-->
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <h3>Total balance</h3>
+                <h1>$19,280.01</h1>
+                <span>
+                    <div>$20,80</div>
+                    <div>-1,05%</div>
+                </span>
+            </div>
+            <div> 
+                <div>
+                    <a href="">TOken</a>
+                    <a href="">NFTs</a>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <p>Hide Small balance</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div></div>
+                        <div>
+                            <h1>ETH</h1>
+                            <div>48023986</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>0.6395</h1>
+                        <p>$2,580.20</p>
+                    </div>
+                </div>
+            </div>
+    
+        </aside>
+</div>
     </div><!--Content Wrapper-->
     <script src="./src/index.js"></script>
 </body>

@@ -3,6 +3,8 @@
 
 @theme{
     --color-green:#97d017;
+    --breakpoint-lg:1145px;
+    --breakpoint-xl:1170px;
 }
 .nav{
     @apply p-3 rounded-full flex w-50 gap-x-2 items-center hover:bg-gray-500 hover:shadow-md  cursor-pointer transition transform ease-out duration-300 hover:scale-105;
