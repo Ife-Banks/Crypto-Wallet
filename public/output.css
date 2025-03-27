@@ -491,6 +491,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -535,6 +538,12 @@
   }
   .w-70 {
     width: calc(var(--spacing) * 70);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
@@ -2234,13 +2243,6 @@
     @media (width >= 40rem) {
       @media (width < 1145px) {
         grid-column: span 5 / span 5;
-      }
-    }
-  }
-  .sm\:max-md\:w-50 {
-    @media (width >= 40rem) {
-      @media (width < 48rem) {
-        width: calc(var(--spacing) * 50);
       }
     }
   }
