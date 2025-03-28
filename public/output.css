@@ -608,6 +608,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -1350,6 +1353,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-green {
     background-color: var(--color-green);
@@ -2161,6 +2167,10 @@
   .transition-normal {
     transition-behavior: normal;
   }
+  .duration-3 {
+    --tw-duration: 3ms;
+    transition-duration: 3ms;
+  }
   .duration-200 {
     --tw-duration: 200ms;
     transition-duration: 200ms;
@@ -2327,6 +2337,16 @@
   .transform-view {
     transform-box: view-box;
   }
+  .group-hover\:scale-1 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 1%;
+        --tw-scale-y: 1%;
+        --tw-scale-z: 1%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .group-hover\:scale-110 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2352,6 +2372,16 @@
   .checked\:bg-\[url\(\'\/src\/img\/mark\.png\'\)\] {
     &:checked {
       background-image: url('/src/img/mark.png');
+    }
+  }
+  .hover\:scale-100 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .hover\:scale-105 {
@@ -2392,6 +2422,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:p-2 {
+    &:hover {
+      @media (hover: hover) {
+        padding: calc(var(--spacing) * 2);
       }
     }
   }
@@ -2503,6 +2540,11 @@
       display: flex;
     }
   }
+  .xl\:hidden {
+    @media (width >= 1170px) {
+      display: none;
+    }
+  }
   .xl\:inline-block {
     @media (width >= 1170px) {
       display: inline-block;
@@ -2521,6 +2563,11 @@
   .xl\:w-full {
     @media (width >= 1170px) {
       width: 100%;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 1170px) {
+      align-items: center;
     }
   }
   .sm\:relative {

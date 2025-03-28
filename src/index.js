@@ -13,6 +13,29 @@ const Nbtn = document.querySelector('#Nbtn');
 const Nb= document.querySelector('#Nb');
 const Tokens = document.querySelector('#Tokens');
 const Ntfs = document.querySelector('#Ntfs');
+const dd = document.querySelector('#dd');
+const asid = document.querySelector('#asid');
+const eth = document.querySelector('#eth');
+const back = document.querySelector('#back');
+
+
+eth.addEventListener('click', () => {
+    if (dd.classList.contains('hidden')){
+        dd.classList.remove('hidden');
+        asid.classList.add('hidden');
+       // dd.classList.add('hidden');
+    }// dd.classList.remove('hidden');   
+     }
+)
+
+back.addEventListener('click', () => {
+    if (asid.classList.contains('hidden')){
+        asid.classList.remove('hidden');
+        dd.classList.add('hidden');
+       // dd.classList.add('hidden');
+    }// dd.classList.remove('hidden');   
+     }
+)
 
 
 burger.addEventListener('click', () => {

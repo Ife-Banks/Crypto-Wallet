@@ -117,8 +117,12 @@
     </ul>
 </nav>
 <div class="col-span-5 grid grid-cols-5 relative sm:max-xl:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 h-screen">
-    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full p-5  gap-y-5 flex flex-col mt-14 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm h-screen overflow-y-scroll overscroll-contain xl:flex border hidden" id="dd" > 
-        <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full p-5  gap-y-5 flex flex-col mt-14 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm h-screen overflow-y-scroll overscroll-contain xl:flex hidden" id="dd" > 
+
+        <div class=" flex justify-between sm:w-full p-2  lg:w-full   xl:items-center"><!--ETH heading and The price-->
+            <div class=" inset-shadow-sm border-gray-300 rounded-full py-1 bg-gray-200 group  hover:scale-110 transform transition ease-out duration-300 cursor-pointer xl:hidden" id="back">
+                <img src="./src/img/back.png" alt="" class="w-8 hover:scale-100 ">
+            </div>
             <div class=" flex items-center gap-x-2 ">
                 <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
                     <g fill="white" fill-rule="evenodd">
@@ -287,7 +291,7 @@
                 </div>
             </div>
     </main>
-        <aside class="col-span-5 bg-gray-200  xl:col-span-2 shadow-sm w-full  py-5 flex flex-col gap-y-5 h-screen overflow-y-scroll overscroll-contain mt-14 sm:mt-0 sm:pt-2 ">
+        <aside class="col-span-5 bg-gray-200  xl:col-span-2 shadow-sm w-full  py-5 flex flex-col gap-y-5 h-screen overflow-y-scroll overscroll-contain mt-14 sm:mt-0 sm:pt-2 " id="asid">
             <div class="flex justify-between items-center  w-full px-5"><!--settings-->
                 <div class="flex gap-x-8 h-full items-center">
                     <div class="w-6">
@@ -332,8 +336,8 @@
                 </div>
             </div>
            <div class="h-50 flex flex-col">
-            <div class="flex flex-col gap-y-3 " id="Tokens">
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+            <div class="flex flex-col gap-y-3" id="Tokens">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 cursor-pointer xl:w-full " id="eth">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                              <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -360,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -385,7 +389,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 " viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +420,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -448,7 +452,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -487,7 +491,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +524,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -569,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
