@@ -8,7 +8,7 @@
 </head>
 <body class="m-0  border h:100vh">
     <div class="grid grid-cols-5 relative   justify-evenly  w-100vw h-100vh">
-<nav class=" text-white col-span-full   w-70 sm:w-full   flex flex-col  sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 h-screen sm:overflow-y-scroll overscroll-contain">
+<nav class=" text-white col-span-full   w-70 sm:w-full   flex flex-col  sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 h-screen sm:overflow-y-scroll overscroll-contain hidden">
     <div class="bg-black flex items-center justify-between gap-x-2 pl-5   pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md md:pt-10 sm:rounded-none"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
         <div class="bg-green rounded-full p-1 flex items-align">
@@ -117,7 +117,7 @@
     </ul>
 </nav>
 <div class="col-span-5 grid grid-cols-5 relative sm:max-xl:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 h-screen">
-    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm overflow-y-scroll overscroll-contain" id="dd" > 
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full p-5  gap-y-5 flex flex-col mt-15 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm overflow-y-scroll overscroll-contain xl:flex" id="dd" > 
         <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
             <div class=" flex items-center gap-x-2 ">
                 <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -287,43 +287,260 @@
                 </div>
             </div>
     </main>
-        <aside class="col-span-2 bg-gray-200  xl:col-span-2 xl:block hidden shadow-sm ">
-            <div><!--settings-->
-                <div></div>
-                <div></div>
+        <aside class="col-span-5 bg-gray-200  xl:col-span-2 shadow-sm w-full pt=10 py-5 flex flex-col gap-y-5 ">
+            <div class="flex justify-between items-center  w-full px-5"><!--settings-->
+                <div class="flex gap-x-8 h-full items-center">
+                    <div class="w-6">
+                        <img src="./src/img/search.png" alt="" srcset="">
+                    </div>
+                    <div class="w-6">
+                        <img src="./src/img/settingsb.png" alt="" srcset="">
+                    </div>
+                    <div class="w-6">
+                        <img src="./src/img/notb.png" alt="" srcset="">
+                    </div>
+                  
+                </div>
+                <div class="shadow-sm rounded-full px-1 pt-2 overflow-hidden bg-purple-500/50">
+                    <img src="./src/img/avatar.png" alt="" srcset="" class="w-10">
+                </div>
             </div>
-            <div>
-                <h3>Total balance</h3>
-                <h1>$19,280.01</h1>
-                <span>
-                    <div>$20,80</div>
-                    <div>-1,05%</div>
-                </span>
+            <div class=" flex flex-col gap-y-1 w-full px-5">
+                <h3 class="font-semibold text-lg">Total balance</h3>
+                <h1 class="font-semibold text-4xl tracking-wide">$19,280.01</h1>
+                <div class="flex text-xs font-normal text-emerald-600 gap-x-1">
+                    <p>$20,80</p>
+                    <p>-1,05%</p>
             </div>
-            <div> 
-                <div>
-                    <a href="">TOken</a>
+            </div>
+            <div class="flex justify-between w-full px-5 mt-2"> 
+                <div class="flex gap-x-4">
+                    <a href="">Token</a>
                     <a href="">NFTs</a>
                 </div>
-                <div>
-                    <input type="checkbox" name="" id="">
+                <div class="flex gap-x-1 text-sm items-center font-semibold ">
+                    <input type="checkbox" name="" id="" class="rounded-full appearance-none border w-4 h-4 checked:bg-green border-gray-400 checked:focus:ring-2 checked:focus:ring-gray-300 checked:bg-[url('/src/img/mark.png')] bg-contain bg-center">
                     <p>Hide Small balance</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <div></div>
-                        <div>
-                            <h1>ETH</h1>
-                            <div>48023986</div>
+            <div class="flex flex-col gap-y-3">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
                         </div>
                     </div>
-                    <div>
-                        <h1>0.6395</h1>
-                        <p>$2,580.20</p>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
                     </div>
                 </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                    <div class="flex justify-between">
+                        <div class="flex gap-x-3 items-center">
+                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
+                        <g fill="white" fill-rule="evenodd">
+                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
+                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
+                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
+                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
+                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
+                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
+                        </g>
+                    </svg>
+                            <div class="flex flex-col" >
+                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <div class="flex gap-x-1">
+                                    <p>4008.95</p>
+                                    <p>+1.05%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col  items-end gap-y-0">
+                            <h1 class="font-bold text-lg">0.6395</h1>
+                            <p class="font-semibold">$2,580.20</p>
+                        </div>
+                    </div>
+                </div>
+              
             </div>
     
         </aside>
