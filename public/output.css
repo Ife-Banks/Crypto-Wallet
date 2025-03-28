@@ -532,6 +532,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -570,6 +573,12 @@
   }
   .w-70 {
     width: calc(var(--spacing) * 70);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
   }
   .w-auto {
     width: auto;
@@ -1274,6 +1283,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-violet-400 {
+    background-color: var(--color-violet-400);
   }
   .bg-violet-400\/10 {
     background-color: color-mix(in oklab, var(--color-violet-400) 10%, transparent);
@@ -2277,6 +2289,11 @@
   .xl\:w-50 {
     @media (width >= 1170px) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .xl\:w-90 {
+    @media (width >= 1170px) {
+      width: calc(var(--spacing) * 90);
     }
   }
   .xl\:w-100 {
