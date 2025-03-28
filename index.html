@@ -117,7 +117,7 @@
     </ul>
 </nav>
 <div class="col-span-5 grid grid-cols-5 relative sm:max-xl:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 h-screen">
-    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full p-5  gap-y-5 flex flex-col mt-15 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm overflow-y-scroll overscroll-contain xl:flex" id="dd" > 
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full p-5  gap-y-5 flex flex-col mt-15 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm h-screen overflow-y-scroll overscroll-contain xl:flex" id="dd" > 
         <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
             <div class=" flex items-center gap-x-2 ">
                 <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -287,7 +287,7 @@
                 </div>
             </div>
     </main>
-        <aside class="col-span-5 bg-gray-200  xl:col-span-2 shadow-sm w-full pt=10 py-5 flex flex-col gap-y-5 ">
+        <aside class="col-span-5 bg-gray-200  xl:col-span-2 shadow-sm w-full pt=10 py-5 flex flex-col gap-y-5 h-screen overflow-y-scroll overscroll-contain">
             <div class="flex justify-between items-center  w-full px-5"><!--settings-->
                 <div class="flex gap-x-8 h-full items-center">
                     <div class="w-6">
@@ -307,7 +307,7 @@
             </div>
             <div class=" flex flex-col gap-y-1 w-full px-5">
                 <h3 class="font-semibold text-lg">Total balance</h3>
-                <h1 class="font-semibold text-4xl tracking-wide">$19,280.01</h1>
+                <h1 class="font-semibold text-3xl tracking-wide">$19,280.01</h1>
                 <div class="flex text-xs font-normal text-emerald-600 gap-x-1">
                     <p>$20,80</p>
                     <p>-1,05%</p>
@@ -324,7 +324,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-y-3">
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
+                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                              <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -354,18 +354,16 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 h-11" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="128" cy="128" r="128" fill="#00EF8B"/>
+                                <path fill="black" d="M144.9,106.4c-12.3,0-22.5,10.1-22.5,22.5v38.7h-18.7c-8.2,0-14.9-6.7-14.9-14.9v-24h29.8V98.6h-29.8
+                                c-20.7,0-37.5,16.8-37.5,37.5v24c0,20.7,16.8,37.5,37.5,37.5h56.2c20.7,0,37.5-16.8,37.5-37.5v-32.3h-37.5V106.4z"/>
+                                <path fill="black" d="M164.6,60.4h-56.2c-20.7,0-37.5,16.8-37.5,37.5v8.7h37.5v-8.7c0-8.2,6.7-14.9,14.9-14.9h56.2
+                                c8.2,0,14.9,6.7,14.9,14.9v24c0,8.2-6.7,14.9-14.9,14.9h-14.9v27h14.9c20.7,0,37.5-16.8,37.5-37.5v-24
+                                C202.1,77.2,185.3,60.4,164.6,60.4z"/>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">FLOW</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -381,18 +379,22 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 " viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Black Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="black"/>
+                                
+                                <!-- White "X" Symbol with Medium Thickness -->
+                                <path fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+                                    M 30,30  
+                                    Q 45,50 50,50
+                                    Q 55,50 70,30
+                                    M 30,70
+                                    Q 45,50 50,50
+                                    Q 55,50 70,70
+                                "/>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">XRP</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -408,18 +410,23 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dark Pink Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="#E6007A"/>
+                                
+                                <!-- White "P" Symbol for Polkadot -->
+                                <path fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="
+                                    M 50,30
+                                    Q 65,30 65,45
+                                    Q 65,60 50,60
+                                    L 50,75
+                                "/>
+                        
+                                <!-- Small Circle for the "dot" in Polkadot -->
+                                <circle cx="50" cy="80" r="3" fill="white"/>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">DOT</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -435,18 +442,30 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 h-11" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dark Orange Background -->
+                                <circle cx="100" cy="100" r="100" fill="#F3BA2F"/> 
+                                
+                                <!-- White BNB Logo -->
+                                <g fill="white">
+                                    <!-- Top Diamond -->
+                                    <path d="M100,30 L130,60 L100,90 L70,60 L100,30 Z"/>
+                                    
+                                    <!-- Left Diamond -->
+                                    <path d="M40,70 L70,100 L40,130 L10,100 L40,70 Z"/>
+                                    
+                                    <!-- Right Diamond -->
+                                    <path d="M160,70 L190,100 L160,130 L130,100 L160,70 Z"/>
+                                    
+                                    <!-- Bottom Diamond -->
+                                    <path d="M100,110 L130,140 L100,170 L70,140 L100,110 Z"/>
+                                    
+                                    <!-- Center Square -->
+                                    <path d="M85,85 L115,85 L115,115 L85,115 L85,85 Z"/>
+                                </g>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">BNB</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -462,18 +481,24 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Black Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="black"/>
+                        
+                                <!-- White Stellar "Swoosh" Symbol -->
+                                <path fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="
+                                    M 20,60 
+                                    Q 40,30 80,40
+                                    M 80,40 
+                                    L 20,80
+                                "/>
+                        
+                                <!-- Two White Lines Representing Orbits -->
+                                <line x1="25" y1="75" x2="75" y2="25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="30" y1="80" x2="80" y2="30" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">XLM</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -489,18 +514,40 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dark Green Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="#34dfb6"/> 
+                                
+                                <!-- White Circle behind "T" for contrast -->
+                                <circle cx="50" cy="50" r="20" fill="white"/>
+                                
+                                <!-- White "T" Symbol -->
+                                <path fill="white" d="
+                                    M 30,35 
+                                    H 70 
+                                    V 45 
+                                    H 55 
+                                    Q 52,70 50,70 
+                                    Q 48,70 45,45 
+                                    H 30 
+                                    V 35
+                                "/>
+                        
+                                <!-- Cutout "T" in Green to maintain transparency -->
+                                <path fill="#34dfb6" d="
+                                    M 35,40 
+                                    H 65 
+                                    V 45 
+                                    H 52 
+                                    V 60 
+                                    H 48 
+                                    V 45 
+                                    H 35 
+                                    V 40
+                                "/>
+                            </svg>
                             <div class="flex flex-col" >
-                                <h1 class="font-semibold text-lg">ETH</h1>
+                                <h1 class="font-semibold text-lg">USDT</h1>
                                 <div class="flex gap-x-1">
                                     <p>4008.95</p>
                                     <p>+1.05%</p>
@@ -516,16 +563,24 @@
                 <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
-                             <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
-                        <g fill="white" fill-rule="evenodd">
-                            <polygon points="127.8 0 125.9 7.1 125.9 277.2 127.8 279.1 255.5 208.5"/>
-                            <polygon points="127.8 0 0 208.5 127.8 279.1 127.8 149.9"/>
-                            <polygon points="127.8 301.7 126.7 303 126.7 414.7 127.8 417 255.9 234.1"/>
-                            <polygon points="127.8 417 127.8 301.7 0 234.1"/>
-                            <polygon points="127.8 279.1 255.5 208.5 127.8 149.9"/>
-                            <polygon points="0 208.5 127.8 279.1 127.8 149.9"/>
-                        </g>
-                    </svg>
+                            <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Dark Gray Circular Background -->
+                                <circle cx="50" cy="50" r="50" fill="#345D9D"/> 
+                                
+                                <!-- White Litecoin "Ł" Symbol -->
+                                <path fill="white" d="
+                                    M 40,65 
+                                    L 47,35 
+                                    H 60 
+                                    L 55,55 
+                                    L 70,55 
+                                    L 67,65 
+                                    H 52 
+                                    L 48,80 
+                                    H 38 
+                                    L 40,65
+                                "/>
+                            </svg>
                             <div class="flex flex-col" >
                                 <h1 class="font-semibold text-lg">ETH</h1>
                                 <div class="flex gap-x-1">
