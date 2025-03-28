@@ -499,9 +499,6 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -534,9 +531,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1202,10 +1196,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
   .border-l {
     border-left-style: var(--tw-border-style);
     border-left-width: 1px;
@@ -1284,9 +1274,6 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
-  }
-  .bg-violet-400 {
-    background-color: var(--color-violet-400);
   }
   .bg-violet-400\/10 {
     background-color: color-mix(in oklab, var(--color-violet-400) 10%, transparent);
@@ -2332,11 +2319,6 @@
       display: none;
     }
   }
-  .sm\:w-50 {
-    @media (width >= 40rem) {
-      width: calc(var(--spacing) * 50);
-    }
-  }
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
@@ -2362,16 +2344,6 @@
       background-color: var(--color-green);
     }
   }
-  .sm\:py-0 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 0);
-    }
-  }
-  .sm\:pt-0 {
-    @media (width >= 40rem) {
-      padding-top: calc(var(--spacing) * 0);
-    }
-  }
   .sm\:backdrop-filter-none {
     @media (width >= 40rem) {
       -webkit-backdrop-filter: none;
@@ -2388,20 +2360,6 @@
   .sm\:max-xl\:col-span-3 {
     @media (width >= 40rem) {
       @media (width < 1170px) {
-        grid-column: span 3 / span 3;
-      }
-    }
-  }
-  .sm\:max-lg\:col-span-2 {
-    @media (width >= 40rem) {
-      @media (width < 1145px) {
-        grid-column: span 2 / span 2;
-      }
-    }
-  }
-  .sm\:max-lg\:col-span-3 {
-    @media (width >= 40rem) {
-      @media (width < 1145px) {
         grid-column: span 3 / span 3;
       }
     }
@@ -2432,16 +2390,6 @@
       @media (width < 48rem) {
         padding-block: calc(var(--spacing) * 0);
       }
-    }
-  }
-  .md\:w-70 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 70);
-    }
-  }
-  .md\:max-w-70 {
-    @media (width >= 48rem) {
-      max-width: calc(var(--spacing) * 70);
     }
   }
   .md\:grid-cols-4 {
