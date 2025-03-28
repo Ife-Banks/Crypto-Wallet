@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>X Wallet</title>
 </head>
-<body class="m-0  border">
-    <div class="grid grid-cols-5 relative   justify-evenly  w-100vw">
-<nav class=" text-white col-span-full   w-70 sm:w-full   flex flex-col  sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 h-screen ">
+<body class="m-0  border h:100vh">
+    <div class="grid grid-cols-5 relative   justify-evenly  w-100vw h-100vh">
+<nav class=" text-white col-span-full   w-70 sm:w-full   flex flex-col  sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 h-screen sm:overflow-y-scroll overscroll-contain">
     <div class="bg-black flex items-center justify-between gap-x-2 pl-5   pr-2 pt-2 pb-2  pl-2 rounded-r-xl w-full shadow-md md:pt-10 sm:rounded-none"><!--nav head-->
        <div class="flex gap-x-2 items-center ">
         <div class="bg-green rounded-full p-1 flex items-align">
@@ -116,8 +116,8 @@
         
     </ul>
 </nav>
-<div class="col-span-5 grid grid-cols-5 relative sm:max-xl:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 h-auto">
-    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm  " id="dd" > 
+<div class="col-span-5 grid grid-cols-5 relative sm:max-xl:col-span-3 sm:w-full xl:col-span-4 xl:w-full m-0 h-screen">
+    <main class=" xl:col-span-3 sm:max-lg:col-span-5  w-full  p-5  gap-y-5 flex flex-col mt-10 sm:mt-1 sm:ml-0 col-span-5 sm:max-md:w-full shadow-sm overflow-y-scroll overscroll-contain" id="dd" > 
         <div class=" flex justify-between sm:w-full p-2  lg:w-full "><!--ETH heading and The price-->
             <div class=" flex items-center gap-x-2 ">
                 <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -238,7 +238,7 @@
                 <p class="font-semibold">Add fee to amount</p>
             </div>
         </div>
-        <div class=" gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl py-3  inset-shadow-sm grid  relative  h-50 box-border" > <!--Adress wrapper-->
+        <div class=" gap-y-3 border-gray-300 shadow-sm w-full bg-gray-100 rounded-2xl pt-3  inset-shadow-sm grid  relative   box-border border" > <!--Adress wrapper-->
             <div class="flex gap-x-4 justify-start mx-5 ">
                <div class="hover:cursor-pointer flex flex-col items-center">
                 <a href="#"  id="Adbtn" >Address</a>
@@ -249,25 +249,27 @@
                <hr class="w-2 h-2 rounded-full bg-black shadow-sm hidden" id="ln" >
                </div>
             </div>
-            <div class=" flex flex-col gap-y-3  w-inherit " id="address" >
-            <div class="border border-gray-300 h-12  rounded-full flex items-center px-2 py-2 justify-between mx-5 ">
-                <input type="text" name="" id="" placeholder="Recipient Address" class="focus:outline-none focus:ring-0 focus:border-transparent px-2  focus:border-blue-300  text-gray-500 xl:w-100 w-full">
-                <div class="flex justify-evenly items-center ">
-                    <a href="">
-                        <img src="/src/img/p.png" alt="" srcset="" class="w-8">
-                    </a >
-                    <a href="">
-                        <img src="/src/img/q.png" alt="" srcset="" class="w-8">
-                    </a >
+            <div class=" h-40 flex flex-col items-center justify-center">
+                <div class=" flex flex-col gap-y-3  w-inherit " id="address" >
+                    <div class="border border-gray-300 h-12  rounded-full flex items-center px-2 py-2 justify-between mx-5 ">
+                        <input type="text" name="" id="" placeholder="Recipient Address" class="focus:outline-none focus:ring-0 focus:border-transparent px-2  focus:border-blue-300  text-gray-500 xl:w-100 w-full">
+                        <div class="flex justify-evenly items-center ">
+                            <a href="">
+                                <img src="/src/img/p.png" alt="" srcset="" class="w-8">
+                            </a >
+                            <a href="">
+                                <img src="/src/img/q.png" alt="" srcset="" class="w-8">
+                            </a >
+                        </div>
+                    </div>
+                    <div class="text-xs flex px-3 py-5 rounded-2xl bg-violet-400/10 mb-5 mx-5">
+                        <p class="font-thin">Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="" class="text-blue-800 underline">Support</a></p>
+                    </div>
+                </div>
+                <div class="absolute hidden w-full flex justify-center" id="link">
+                    <h1>No Data Avaliable at the moment</h1>
                 </div>
             </div>
-            <div class="text-xs flex px-3 py-5 rounded-2xl bg-violet-400/10 mb-5 mx-5">
-                <p class="font-thin">Send only ETH Ethereum(ECR20) to this adress. Sending other asests may result in loss. <a href="" class="text-blue-800 underline">Support</a></p>
-            </div>
-        </div>
-        <div class="absolute place-self-center hidden" id="link">
-            <h1>No Data Avaliable at the moment</h1>
-        </div>
         </div>
         <div class=" flex flex-col gap-y-3 border-gray-300 w-full  rounded-2xl py-12 px-5 sm:max-md:py-0"><!--Receive-->
             <div class="font-semibold text-lg">

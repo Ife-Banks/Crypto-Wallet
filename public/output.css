@@ -514,11 +514,8 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
-  .h-auto {
-    height: auto;
+  .h-40 {
+    height: calc(var(--spacing) * 40);
   }
   .h-screen {
     height: 100vh;
@@ -531,6 +528,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1275,6 +1275,9 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
+  .bg-violet-400 {
+    background-color: var(--color-violet-400);
+  }
   .bg-violet-400\/10 {
     background-color: color-mix(in oklab, var(--color-violet-400) 10%, transparent);
   }
@@ -1491,6 +1494,9 @@
   }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -2327,6 +2333,11 @@
   .sm\:overflow-y-hidden {
     @media (width >= 40rem) {
       overflow-y: hidden;
+    }
+  }
+  .sm\:overflow-y-scroll {
+    @media (width >= 40rem) {
+      overflow-y: scroll;
     }
   }
   .sm\:rounded-none {
