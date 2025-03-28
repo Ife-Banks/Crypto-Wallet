@@ -7,7 +7,7 @@
     --breakpoint-xl:1170px;
 }
 .nav{
-    @apply p-3 rounded-full flex w-50 gap-x-2 items-center sm:hover:bg-gray-500 hover:shadow-md hover:inset-shadow-sm cursor-pointer transition transform ease-out duration-300 hover:scale-105;
+    @apply p-3 rounded-full flex w-50 gap-x-2 items-center sm:hover:bg-gray-500 hover:shadow-md hover:inset-shadow-sm cursor-pointer transition transform ease-out duration-300 hover:scale-105  focus:inset-shadow  focus:scale-105;
 }
 
 .not{
