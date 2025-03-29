@@ -533,6 +533,9 @@
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-auto {
     height: auto;
   }
@@ -1124,8 +1127,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-auto {
+    overflow: auto;
+  }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .overflow-y-hidden {
+    overflow-y: hidden;
   }
   .overflow-y-scroll {
     overflow-y: scroll;
@@ -1313,6 +1325,9 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
@@ -2434,6 +2449,11 @@
       width: 100%;
     }
   }
+  .xl\:w-screen {
+    @media (width >= 1170px) {
+      width: 100vw;
+    }
+  }
   .xl\:items-center {
     @media (width >= 1170px) {
       align-items: center;
@@ -2482,6 +2502,16 @@
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
+    }
+  }
+  .sm\:overflow-hidden {
+    @media (width >= 40rem) {
+      overflow: hidden;
+    }
+  }
+  .sm\:overflow-scroll {
+    @media (width >= 40rem) {
+      overflow: scroll;
     }
   }
   .sm\:overflow-y-hidden {
@@ -2557,6 +2587,13 @@
     @media (width >= 40rem) {
       @media (width < 48rem) {
         width: 100%;
+      }
+    }
+  }
+  .sm\:max-md\:overflow-y-hidden {
+    @media (width >= 40rem) {
+      @media (width < 48rem) {
+        overflow-y: hidden;
       }
     }
   }
