@@ -18,20 +18,19 @@ const asid = document.querySelector('#asid');
 const eth = document.querySelector('#eth');
 const back = document.querySelector('#back');
 
-
-eth.addEventListener('click', () => {
-    if (dd.classList.contains('hidden')){
-        dd.classList.remove('hidden');
-        asid.classList.add('hidden');
+back.addEventListener('click', () => {
+    if (dd.classList.contains('z-1')){
+        dd.classList.remove('z-1');
+        asid.classList.add('z-1');
        // dd.classList.add('hidden');
     }// dd.classList.remove('hidden');   
      }
 )
 
-back.addEventListener('click', () => {
-    if (asid.classList.contains('hidden')){
-        asid.classList.remove('hidden');
-        dd.classList.add('hidden');
+eth.addEventListener('click', () => {
+    if (asid.classList.contains('z-1')){
+        asid.classList.remove('z-1');
+        dd.classList.add('z-1');
        // dd.classList.add('hidden');
     }// dd.classList.remove('hidden');   
      }
