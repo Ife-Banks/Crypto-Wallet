@@ -7,7 +7,7 @@
     --breakpoint-xl:1170px;
 }
 .nav{
-    @apply p-3 rounded-full flex w-50 gap-x-2 items-center sm:hover:bg-gray-500 hover:shadow-md hover:inset-shadow-sm cursor-pointer transition transform ease-out duration-300 hover:scale-105   focus:inset-shadow-sm focus:shadow-sm  focus:scale-105;
+    @apply p-3 rounded-full flex w-40 sm:w-50 gap-x-2 items-center sm:hover:bg-gray-500 hover:shadow-md hover:inset-shadow-sm cursor-pointer transition transform ease-out duration-300 hover:scale-105   focus:inset-shadow-sm focus:shadow-sm  focus:scale-105;
 }
 
 .not{
@@ -15,13 +15,10 @@
 }
 
 .arrow{
-    @apply  bg-contain group-hover:bg-[url('/src/img/arrow.png')] group-active:bg-[url('/src/img/arrow.png')]  group-focus:bg-[url('/src/img/arrow.png')] w-7  h-7 bg-no-repeat bg-center;
+    @apply hidden sm:block  bg-contain group-hover:bg-[url('/src/img/arrow.png')] group-active:bg-[url('/src/img/arrow.png')]  group-focus:bg-[url('/src/img/arrow.png')] w-7  h-7 bg-no-repeat bg-center;
 }
 
 .hover{
     @apply hover:border hover:border-green cursor-pointer active:border-green focus:border-green;
 }
 
-#nav{
-    @apply  h-screen;
-}

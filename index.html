@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="/public/output.css">
     <title>X Wallet</title>
 </head>
-<body class="m-0  h-auto m-0 p-0 overflow-y-scroll bg-gray-200 sm:overflow-y-hidden">
+<body class="m-0  h-auto m-0 p-0 overflow-y-scroll  sm:overflow-y-hidden">
     <div class="grid grid-cols-5 relative   justify-evenly  w-100vw h-screen m-0 select-none">
-<nav class=" text-white col-span-full  w-full sm:w-full  flex flex-col sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 sm:overflow-y-scroll" id="nav">
+<nav class=" text-white col-span-full  w-full sm:w-full  flex flex-col sm:block sm:max-xl:col-span-2  mix-blend-normal z-999 fixed sm:relative mt-0 bg-blend-multiply  sm:z-0 xl:col-span-1 xl:w-100 sm:overflow-y-scroll" >
     <div class="bg-black flex items-center justify-between gap-x-2 pl-5   pr-2 pt-2 pb-2  pl-2 w-full shadow-md md:pt-10 sm:rounded-none"><!--nav head-->
         <div class="flex gap-x-2 items-center ">
          <div class="bg-green rounded-full p-1 flex items-align">
@@ -22,7 +22,7 @@
            </svg>
        </div>
      </div>
-     <ul class="backdrop-blur-sm bg-black/50 flex flex-col gap-y-3 pt-10 text-gray-300 relative z-999 pl-2 text-md font-semibold pr-5 sm:block overflow-y-scroll hidden overscroll-contain scrollbar scrollbar-thumb-black scrollbar-track-black scrollbar-thumb-rounded scrollbar-track-rounded absolute -top-1 overflow-y-scroll overscroll-contain sm:overflow-y-hidden sm:bg-black" id="menu">
+     <ul class="backdrop-blur-sm bg-black/50 sm:flex sm:flex-col gap-y-3 pt-10 text-gray-300 relative z-999 pl-2 text-md font-semibold pr-5 sm:block absolute -top-1  sm:bg-black grid grid-cols-3 h-auto pb-2" id="menu">
          <a href="#" class="nav flex justify-between group">
             <div class="flex gap-x-2">
              <img src="./src/img/Dash.png " class="w-6" alt="" srcset="">
@@ -62,9 +62,9 @@
           </a>
          
          <li class="nav flex  justify-between ">
-             <div class="flex gap-x-2">
+             <div class="flex gap-x-2 items-center">
                  <img src="./src/img/Not.png " class="w-6" alt="" srcset="">
-                 <p>Notifications</p>
+                 <p class="text-sm sm:text-md">Notifications</p>
              </div>
              <div class="not"><p>4</p></div>
          </li>
@@ -78,7 +78,7 @@
              </div>
           </a>
  
-         <li class=" p-3 rounded-3xl  w-50 gap-x-2 items-center  cursor-pointer bg-green/50 flex flex-col items-center place-self-center mt-3 mb-3 backdrop-blur-xl sm:bg-green sm:backdrop-filter-none sm:max-md:w-50 md:max-xl:w-70 xl:w-50">
+         <li class=" p-3 rounded-3xl  w-50 gap-x-2 items-center  cursor-pointer bg-green/50 flex flex-col items-center place-self-center mt-3 mb-3 backdrop-blur-xl sm:bg-green sm:backdrop-filter-none sm:max-md:w-50 md:max-xl:w-70 xl:w-50 row-start-4 col-start-2 sm:">
              <div class="">
                  <img src="/src/img/spiral.png" alt="" srcset="" class="w-50">
              </div>
@@ -163,11 +163,13 @@
                 </div>
             </div>
             <div class="flex gap-x-2 items-center">
-                <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
-                    <img src="./src/img/chart.png" alt="" srcset="" class="w-7 h-7">
+                <div class=" relative">
+                    <img src="./src/img/chart.png" alt="" srcset="" class="w-8 h-8 rounded-lg bg-gray-100 shadow-sm p-1 hover">
+                   
+                    
                 </div>
-                <div class=" rounded-lg bg-gray-100 shadow-sm p-1">
-                    <img src="./src/img/info.png" alt="" srcset="" class="w-7 h-7">
+                <div class="">
+                    <img src="./src/img/info.png" alt="" srcset="" class="w-8 h-8  rounded-lg bg-gray-100 shadow-sm p-1 hover">
                 </div>
             </div>
         </div>
@@ -337,7 +339,7 @@
             </div>
            <div class="h-50 flex flex-col">
             <div class="flex flex-col gap-y-3" id="Tokens">
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 cursor-pointer xl:w-full  " id="eth">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 cursor-pointer xl:w-full  " id="eth">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                              <svg class="w-10 h-10  bg-blue-700 p-1 rounded-full shadow-sm border-box" viewBox="0 0 256 417" xmlns="http://www.w3.org/2000/svg ">
@@ -364,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -389,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 " viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -420,7 +422,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -452,7 +454,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -491,7 +493,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -524,7 +526,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xlxl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -573,7 +575,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" rounded-xl px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
+                <div class=" rounded-xl xl:rounded-none px-3 py-1 w-100 place-self-center hover:bg-white hover:shadow-sm transition ease-in duration-200 xl:w-full">
                     <div class="flex justify-between">
                         <div class="flex gap-x-3 items-center">
                             <svg class="w-11 h-11" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
